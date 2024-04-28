@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="shortcut icon" href="img/doomsday.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Contacto</title>
+</head>
+<body class="formulario">
+    <div>
+        <br><h2>Si necesitas contactar conmigo o pedir un presupuesto, aquí puedes registrar tus datos:</h2>
+    </div>
+    <section class="cont">
+        <form name="formulario" method="post" action="mailto:bill.freeman10@gmail.com">
+        <fieldset>
+            <legend>Formulario de Registro</legend>
+            <fieldset>
+                <legend>Datos Personales</legend>
+                Nombre: <input class="caja" type="text" name="nombre" required><br>
+                Apellidos: <input class="caja" type="text" name="apellidos" required>
+            </fieldset>
+            <fieldset>
+                <legend>Dirección</legend>
+                Calle: <input class="caja" type="text"><br>
+                Número: <input class="caja" type="text"><br>
+                Piso: <input class="caja" type="text"><br>
+                Código postal: <input class="caja" type="text"><br>
+                Ciudad: <input class="caja" type="text"><br>
+            </fieldset>
+            <fieldset>
+                <legend>Otros Datos</legend>
+                    <input type="radio" name="datos" value="Particular">Particular
+                    <input type="radio" name="datos" value="Empresa">Empresa
+            </fieldset>
+            <fieldset>
+                <legend>Datos de contacto</legend>
+                Correo Electrónico: <input class="caja" type="email" name="correo" required><br>
+                Teléfono: <input class="caja" type="tel"><br>
+            </fieldset>
+            <fieldset>
+                <legend>Indicar motivo de contacto</legend>
+                <select name="contacto" id="">
+                    <option value="1">Información</option>
+                    <option value="2">Presupuesto</option>
+                    <option value="3">Incidencias</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Comentarios</legend>
+                <textarea name="comentarios" id="" cols="30" rows="8" placeholder="Añade aquí tus observaciones"></textarea>
+            </fieldset>
+            <fieldset>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+            </fieldset>
+        </fieldset>
+        </form>
+    </section>
+</body>
+</html>
